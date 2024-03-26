@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 import CoreData
-import LocalAuthentication
+
 
 class ExpenseSettingsViewModel: ObservableObject {
     
@@ -17,50 +17,13 @@ class ExpenseSettingsViewModel: ObservableObject {
     var cancellableBiometricTask: AnyCancellable? = nil
     
     @Published var currency = UserDefaults.standard.string(forKey: UD_EXPENSE_CURRENCY) ?? ""
-    @Published var enableBiometric = UserDefaults.standard.bool(forKey: UD_USE_BIOMETRIC) {
-        didSet {
-            if enableBiometric { authenticate() }
-            else { UserDefaults.standard.setValue(false, forKey: UD_USE_BIOMETRIC) }
-        }
-    }
+
     
     @Published var alertMsg = String()
     @Published var showAlert = false
     
     init() {}
         
-    func authenticate() {
-        showAlert = false
-        alertMsg = ""
-        cancellableBiometricTask = BiometricAuthUtlity.shared.authenticate()
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { completion in
-                switch completion {
-                case .failure(let error):
-                    self.showAlert = true
-                    self.alertMsg = error.description
-                    self.enableBiometric = false
-                default: return
-                }
-            }) { _ in
-                UserDefaults.standard.setValue(true, forKey: UD_USE_BIOMETRIC)
-            }
-    }
-    
-    func getBiometricType() -> String {
-        if #available(iOS 11.0, *) {
-            let context = LAContext()
-            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
-                switch context.biometryType {
-                    case .faceID: return "Face ID"
-                    case .touchID: return "Touch ID"
-                    case .none: return "App Lock"
-                    @unknown default: return "App Lock"
-                }
-            }
-        }
-        return "App Lock"
-    }
     
     func saveCurrency(currency: String) {
         self.currency = currency

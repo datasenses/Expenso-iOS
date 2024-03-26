@@ -25,13 +25,7 @@ struct ExpenseSettingsView: View {
                     ToolbarModelView(title: "Settings") { self.presentationMode.wrappedValue.dismiss() }
                     
                     VStack {
-                        
-                        HStack {
-                            TextView(text: "Enable \(viewModel.getBiometricType())", type: .button).foregroundColor(Color.text_primary_color)
-                            Spacer()
-                            Toggle("", isOn: $viewModel.enableBiometric)
-                                .toggleStyle(SwitchToggleStyle(tint: Color.main_color))
-                        }.padding(8)
+
                         
                         Button(action: { selectCurrency = true }, label: {
                             HStack {

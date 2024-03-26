@@ -17,10 +17,10 @@ let IMAGE_FILTER_ICON = "filter_icon"
 let IMAGE_OPTION_ICON = "settings_icon"
 
 // User Defaults
-let UD_USE_BIOMETRIC = "useBiometric"
+
 let UD_EXPENSE_CURRENCY = "expenseCurrency"
 
-let CURRENCY_LIST = ["₹", "$", "€", "¥", "£", "¢", "₭", "₫"]
+let CURRENCY_LIST = ["₫", "$", "€", "¥", "£", "¢", "₭", "₹"]
 
 // Transaction types
 let TRANS_TYPE_INCOME = "income"
