@@ -7,29 +7,25 @@
 
 import SwiftUI
 
-enum InterFontType: String {
-    case black = "Inter-Black"
+enum InternalFontType: String {
     case bold = "Inter-Bold"
-    case extraBold = "Inter-ExtraBold"
-    case extraLight = "Inter-ExtraLight"
-    case light = "Inter-Light"
     case medium = "Inter-Medium"
     case regular = "Inter-Regular"
     case semiBold = "Inter-SemiBold"
-    case thin = "Inter-Thin"
 }
 
-struct InterFont: ViewModifier {
+struct InternalFont: ViewModifier {
     
-    var type: InterFontType
+    var weight: Font.Weight
     var size: CGFloat
     
-    init(_ type: InterFontType = .regular, size: CGFloat = 16) {
-        self.type = type
+    init(_ type: Font.Weight = .regular, size: CGFloat = 16) {
+        self.weight = type
         self.size = size
     }
     
     func body(content: Content) -> some View {
-        content.font(Font.custom(type.rawValue, size: size))
+        
+        content.font(Font.system(size: size, weight:weight))
     }
 }

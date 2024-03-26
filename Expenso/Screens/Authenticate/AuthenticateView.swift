@@ -20,7 +20,7 @@ struct AuthenticateView: View {
                 VStack {
                     NavigationLink(destination: NavigationLazyView(ExpenseView()), isActive: $viewModel.didAuthenticate, label: {})
                     Spacer()
-                    Image("pie_icon").resizable().frame(width: 120.0, height: 120.0)
+                    Image("expense_diary_icon").resizable().frame(width: 120.0, height: 120.0)
                     VStack(spacing: 16) {
                         TextView(text: "\(APP_NAME) is locked", type: .body_1).foregroundColor(Color.text_primary_color).padding(.top, 20)
                         Button(action: { viewModel.authenticate() }, label: {

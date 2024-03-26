@@ -31,7 +31,7 @@ struct ExpenseDetailedView: View {
                     
                     ToolbarModelView(title: "Details", button1Icon: IMAGE_DELETE_ICON, button2Icon: IMAGE_SHARE_ICON) { self.presentationMode.wrappedValue.dismiss() }
                         button1Method: { self.confirmDelete = true }
-                        button2Method: { viewModel.shareNote() }
+                        
                     
                     ScrollView(showsIndicators: false) {
                         
@@ -76,7 +76,7 @@ struct ExpenseDetailedView: View {
                         Spacer()
                         NavigationLink(destination: AddExpenseView(viewModel: AddExpenseViewModel(expenseObj: viewModel.expenseObj)), label: {
                             Image("pencil_icon").resizable().frame(width: 28.0, height: 28.0)
-                            Text("Edit").modifier(InterFont(.semiBold, size: 18)).foregroundColor(.white)
+                            Text("Edit").modifier(InternalFont(.semibold, size: 18)).foregroundColor(.white)
                         })
                         .padding(EdgeInsets(top: 10, leading: 15, bottom: 10, trailing: 20))
                         .background(Color.main_color).cornerRadius(25)

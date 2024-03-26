@@ -24,7 +24,7 @@ struct ToolbarModelView: View {
     
     var backButtonClick: () -> ()
     var button1Method: (() -> ())?
-    var button2Method: (() -> ())?
+    
     
     var body: some View {
         ZStack {
@@ -34,10 +34,7 @@ struct ToolbarModelView: View {
                         label: { Image("back_arrow").resizable().frame(width: 34.0, height: 34.0) })
                 }
                 Spacer()
-                if let button2Method = self.button2Method {
-                    Button(action: { button2Method() },
-                           label: { Image(button2Icon ?? "").resizable().frame(width: 28.0, height: 28.0) }).padding(.horizontal, 8)
-                }
+
                 if let button1Method = self.button1Method {
                     Button(action: { button1Method() },
                            label: { Image(button1Icon ?? "").resizable().frame(width: 28.0, height: 28.0) }).padding(.horizontal, 8)

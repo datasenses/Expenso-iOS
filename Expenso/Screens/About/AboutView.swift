@@ -21,7 +21,7 @@ struct AboutView: View {
                     
                     Spacer().frame(height: 80)
                     
-                    Image("pie_icon").resizable().frame(width: 120.0, height: 120.0)
+                    Image("expense_diary_icon").resizable().frame(width: 120.0, height: 120.0)
                     TextView(text: "\(APP_NAME)", type: .h6).foregroundColor(Color.text_primary_color).padding(.top, 20)
                     TextView(text: "v\(Bundle.main.infoDictionary!["CFBundleShortVersionString"] ?? "")", type: .body_2)
                         .foregroundColor(Color.text_secondary_color).padding(.top, 2)
@@ -32,17 +32,6 @@ struct AboutView: View {
                             TextView(text: "ATTRIBUTIONS & LICENSE", type: .overline).foregroundColor(Color.text_primary_color)
                             TextView(text: "Licensed Under Apache License 2.0", type: .body_2)
                                 .foregroundColor(Color.text_secondary_color).padding(.top, 2)
-                        }
-                        VStack(alignment: .leading, spacing: 4) {
-                            HStack { Spacer() }
-                            TextView(text: "VISIT", type: .overline).foregroundColor(Color.text_primary_color)
-                            TextView(text: "\(APP_LINK)", type: .body_2)
-                                .foregroundColor(Color.main_color).padding(.top, 2)
-                                .onTapGesture {
-                                    if let url: URL = URL(string: APP_LINK) {
-                                        UIApplication.shared.open(url)
-                                    }
-                                }
                         }
                     }.padding(20)
                     

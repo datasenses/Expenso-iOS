@@ -8,11 +8,7 @@
 import Foundation
 
 // App Globals
-let APP_NAME = "Expenso"
-let APP_LINK = "https://github.com/sameersyd/Expenso"
-let SHARED_FROM_EXPENSO = """
-    Shared from \(APP_NAME) App: \(APP_LINK)
-    """
+let APP_NAME = "Expense Diary"
 
 // IMAGE_ICON NAMES
 let IMAGE_DELETE_ICON = "delete_icon"
@@ -24,7 +20,7 @@ let IMAGE_OPTION_ICON = "settings_icon"
 let UD_USE_BIOMETRIC = "useBiometric"
 let UD_EXPENSE_CURRENCY = "expenseCurrency"
 
-let CURRENCY_LIST = ["₹", "$", "€", "¥", "£", "¢", "₭"]
+let CURRENCY_LIST = ["₹", "$", "€", "¥", "£", "¢", "₭", "₫"]
 
 // Transaction types
 let TRANS_TYPE_INCOME = "income"

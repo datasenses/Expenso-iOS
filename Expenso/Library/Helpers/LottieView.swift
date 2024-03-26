@@ -9,18 +9,18 @@ import SwiftUI
 import Lottie
 
 enum LottieAnimType: String {
-    case empty_face = "empty-face"
+    case savingAnimation = "saving_animation"
 }
 
 struct LottieView: UIViewRepresentable {
     
     var animType: LottieAnimType
-    let animationView = AnimationView()
+    let animationView = LottieAnimationView()
     
     func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
         
         let view = UIView()
-        let animation = Animation.named(animType.rawValue)
+        let animation = LottieAnimation.named(animType.rawValue)
         animationView.animation = animation
         animationView.contentMode = .scaleAspectFit
         animationView.backgroundBehavior = .pauseAndRestore
@@ -43,6 +43,6 @@ struct LottieView: UIViewRepresentable {
 
 struct LottieView_Previews: PreviewProvider {
     static var previews: some View {
-        LottieView(animType: .empty_face)
+        LottieView(animType: .savingAnimation)
     }
 }

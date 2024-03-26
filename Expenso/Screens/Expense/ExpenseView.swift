@@ -31,7 +31,7 @@ struct ExpenseView: View {
                     NavigationLink(destination: NavigationLazyView(AboutView()), isActive: $displayAbout, label: {})
                     ToolbarModelView(title: "Dashboard", hasBackButt: false, button1Icon: IMAGE_OPTION_ICON, button2Icon: IMAGE_FILTER_ICON) { self.presentationMode.wrappedValue.dismiss() }
                         button1Method: { self.showOptionsSheet = true }
-                        button2Method: { self.showFilterSheet = true }
+                       
                         .actionSheet(isPresented: $showFilterSheet) {
                             ActionSheet(title: Text("Select a filter"), buttons: [
                                     .default(Text("Overall")) { filter = .all },
@@ -106,7 +106,7 @@ struct ExpenseMainView: View {
         ScrollView(showsIndicators: false) {
             
             if fetchRequest.wrappedValue.isEmpty {
-                LottieView(animType: .empty_face).frame(width: 300, height: 300)
+                LottieView(animType: .savingAnimation).frame(width: 300, height: 300)
                 VStack {
                     TextView(text: "No Transaction Yet!", type: .h6).foregroundColor(Color.text_primary_color)
                     TextView(text: "Add a transaction and it will show up here", type: .body_1).foregroundColor(Color.text_secondary_color).padding(.top, 2)

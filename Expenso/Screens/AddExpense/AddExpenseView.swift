@@ -63,14 +63,14 @@ struct AddExpenseView: View {
                         VStack(spacing: 12) {
                             
                             TextField("Title", text: $viewModel.title)
-                                .modifier(InterFont(.regular, size: 16))
+                                .modifier(InternalFont(.regular, size: 16))
                                 .accentColor(Color.text_primary_color)
                                 .frame(height: 50).padding(.leading, 16)
                                 .background(Color.secondary_color)
                                 .cornerRadius(4)
                             
                             TextField("Amount", text: $viewModel.amount)
-                                .modifier(InterFont(.regular, size: 16))
+                                .modifier(InternalFont(.regular, size: 16))
                                 .accentColor(Color.text_primary_color)
                                 .frame(height: 50).padding(.leading, 16)
                                 .background(Color.secondary_color)
@@ -108,7 +108,7 @@ struct AddExpenseView: View {
                             .background(Color.secondary_color).cornerRadius(4)
                             
                             TextField("Note", text: $viewModel.note)
-                                .modifier(InterFont(.regular, size: 16))
+                                .modifier(InternalFont(.regular, size: 16))
                                 .accentColor(Color.text_primary_color)
                                 .frame(height: 50).padding(.leading, 16)
                                 .background(Color.secondary_color)
