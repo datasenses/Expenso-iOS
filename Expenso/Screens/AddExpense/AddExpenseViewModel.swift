@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import Datasenses_iOS
 
 class AddExpenseViewModel: ObservableObject {
     
@@ -128,6 +129,7 @@ class AddExpenseViewModel: ObservableObject {
         expense.amount = amount
         do {
             try managedObjectContext.save()
+            Datasenses.shared().track(event: "charged", properties: fakeEvent(expenseObj: expense))
             closePresenter = true
         } catch { alertMsg = "\(error)"; showAlert = true }
     }
@@ -139,4 +141,37 @@ class AddExpenseViewModel: ObservableObject {
             try managedObjectContext.save(); closePresenter = true
         } catch { alertMsg = "\(error)"; showAlert = true }
     }
+    
+    func fakeEvent(expenseObj: ExpenseCD?) -> Properties {
+        guard let expenseObj = expenseObj else {
+            return ["amount": "10000",
+                    "payment_type": "credit card",
+                    "charged_id": "123456",
+                    "items": [
+                        [
+                            "category": "Books",
+                            "book_name": "The Millionaire next door",
+                            "quantity": 1
+                        ],
+                        [
+                            "category": "Books",
+                            "book_name": "Achieving inner zen",
+                            "quantity": 1
+                        ]
+                    ]
+            ]
+        }
+        return ["amount": String(expenseObj.amount),
+                "payment_type": "credit card",
+                "charged_id": UUID().uuidString,
+                "items": [
+                    [
+                        "category": expenseObj.type ?? "Books",
+                        "book_name": expenseObj.title ?? "God Father",
+                        "quantity": 1
+                    ]
+                ]
+        ]
+    }
+    
 }

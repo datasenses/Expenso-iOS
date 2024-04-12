@@ -29,7 +29,7 @@ struct ExpenseDetailedView: View {
                 
                 VStack {
                     
-                    ToolbarModelView(title: "Details", button1Icon: IMAGE_DELETE_ICON, button2Icon: IMAGE_SHARE_ICON) { self.presentationMode.wrappedValue.dismiss() }
+                    ToolbarModelView(title: "Details", button1Icon: IMAGE_DELETE_ICON) { self.presentationMode.wrappedValue.dismiss() }
                         button1Method: { self.confirmDelete = true }
                         
                     

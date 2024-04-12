@@ -16,16 +16,33 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.datasenses.io.expensop</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>dsexpenseapp</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAdvertisingAttributionReportEndpoint</key>
+	<string>https://dts.guru/.well-known/skadnetwork/report-attribution/</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Your camera is used to attach media files to your transactions</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Photo library is used to attach media files to your transactions</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Photo library is used to attach media files to your transactions</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>This identifier will be used to deliver personalized ads to you.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Inter-Black.ttf</string>
@@ -47,6 +64,8 @@
 	<true/>
 	<key>UILaunchScreen</key>
 	<dict/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

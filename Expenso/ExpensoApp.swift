@@ -10,7 +10,8 @@ import CoreData
 
 @main
 struct ExpensoApp: App {
-    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @State private var showLaunchView: Bool = true
     init() {
         self.setDefaultPreferences()
     }
@@ -24,8 +25,17 @@ struct ExpensoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ExpenseView()
-                .environment(\.managedObjectContext, persistentContainer.viewContext)
+            ZStack {
+                ExpenseView()
+                    .environment(\.managedObjectContext, persistentContainer.viewContext)
+                ZStack {
+                    if showLaunchView {
+                        LaunchView(showLaunchView: $showLaunchView)
+                            .transition(.move(edge: .leading))
+                    }
+                }
+                .zIndex(2.0)
+            }
         }
     }
     

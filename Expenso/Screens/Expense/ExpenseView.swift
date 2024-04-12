@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AppTrackingTransparency
+import Datasenses_iOS
 
 struct ExpenseView: View {
     
@@ -21,6 +23,10 @@ struct ExpenseView: View {
     @State private var displayAbout = false
     @State private var displaySettings = false
     
+    private func handleUrl(_ url: URL) {
+        Datasenses.shared().handleUrl(url: url)
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -30,22 +36,22 @@ struct ExpenseView: View {
                     NavigationLink(destination: NavigationLazyView(ExpenseSettingsView()), isActive: $displaySettings, label: {})
                     NavigationLink(destination: NavigationLazyView(AboutView()), isActive: $displayAbout, label: {})
                     ToolbarModelView(title: "Dashboard", hasBackButt: false, button1Icon: IMAGE_OPTION_ICON, button2Icon: IMAGE_FILTER_ICON) { self.presentationMode.wrappedValue.dismiss() }
-                        button1Method: { self.showOptionsSheet = true }
-                       
+                button1Method: { self.showOptionsSheet = true }
+                    
                         .actionSheet(isPresented: $showFilterSheet) {
                             ActionSheet(title: Text("Select a filter"), buttons: [
-                                    .default(Text("Overall")) { filter = .all },
-                                    .default(Text("Last 7 days")) { filter = .week },
-                                    .default(Text("Last 30 days")) { filter = .month },
-                                    .cancel()
+                                .default(Text("Overall")) { filter = .all },
+                                .default(Text("Last 7 days")) { filter = .week },
+                                .default(Text("Last 30 days")) { filter = .month },
+                                .cancel()
                             ])
                         }
                     ExpenseMainView(filter: filter)
                         .actionSheet(isPresented: $showOptionsSheet) {
                             ActionSheet(title: Text("Select an option"), buttons: [
-                                    .default(Text("About")) { self.displayAbout = true },
-                                    .default(Text("Settings")) { self.displaySettings = true },
-                                    .cancel()
+                                .default(Text("About")) { self.displayAbout = true },
+                                .default(Text("Settings")) { self.displaySettings = true },
+                                .cancel()
                             ])
                         }
                     Spacer()
@@ -66,6 +72,15 @@ struct ExpenseView: View {
         .navigationViewStyle(StackNavigationViewStyle())
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification)) { _ in
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                print("Status")
+            })
+        }
+        .onOpenURL { incomingURL in
+            print("App was opened via URL: \(incomingURL)")
+            handleUrl(incomingURL)
+        }
     }
 }
 
@@ -184,7 +199,7 @@ struct ExpenseModelView: View {
         VStack(spacing: 12) {
             HStack {
                 Spacer()
-                Image(isIncome ? "income_icon" : "expense_icon").resizable().frame(width: 40.0, height: 40.0).padding(12)
+                Image(isIncome ? "money_in" : "money_out").resizable().frame(width: 40.0, height: 40.0).padding(12)
             }
             HStack{
                 TextView(text: isIncome ? "INCOME" : "EXPENSE", type: .overline).foregroundColor(Color.init(hex: "828282"))

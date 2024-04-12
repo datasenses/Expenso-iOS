@@ -1,10 +1,12 @@
 PODS:
+  - Datasenses-iOS (0.2.1)
   - DGCharts (5.1.0):
     - DGCharts/Core (= 5.1.0)
   - DGCharts/Core (5.1.0)
   - lottie-ios (4.4.1)
 
 DEPENDENCIES:
+  - "Datasenses-iOS (from `git@github.com:datasenses/datasenses-ios.git`, tag `0.1.3`)"
   - DGCharts (~> 5.1)
   - lottie-ios (~> 4.4)
 
@@ -13,10 +15,21 @@ SPEC REPOS:
     - DGCharts
     - lottie-ios
 
+EXTERNAL SOURCES:
+  Datasenses-iOS:
+    :git: "git@github.com:datasenses/datasenses-ios.git"
+    :tag: 0.1.3
+
+CHECKOUT OPTIONS:
+  Datasenses-iOS:
+    :git: "git@github.com:datasenses/datasenses-ios.git"
+    :tag: 0.1.3
+
 SPEC CHECKSUMS:
+  Datasenses-iOS: a3fb613d4b932cd1a4135325f249f30868363d33
   DGCharts: 1c6daf585b6cfc78807af44ea690d357c410627f
   lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
 
-PODFILE CHECKSUM: aaacfad3286118e9246b8c349f747ecbcf23d8cd
+PODFILE CHECKSUM: 07c1f4e48474c78e2c2e30b13aa1dc7e03f7aed0
 
 COCOAPODS: 1.15.2

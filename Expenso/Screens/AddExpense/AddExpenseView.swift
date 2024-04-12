@@ -158,7 +158,7 @@ struct AddExpenseView: View {
                 VStack {
                     Spacer()
                     VStack {
-                        Button(action: { viewModel.saveTransaction(managedObjectContext: managedObjectContext) }, label: {
+                        Button(action: { saveTransaction() }, label: {
                             HStack {
                                 Spacer()
                                 TextView(text: viewModel.getButtText(), type: .button).foregroundColor(.white)
@@ -179,6 +179,10 @@ struct AddExpenseView: View {
         .onReceive(viewModel.$closePresenter) { close in
             if close { self.presentationMode.wrappedValue.dismiss() }
         }
+    }
+    
+    func saveTransaction() {
+        viewModel.saveTransaction(managedObjectContext: managedObjectContext)
     }
 }
 

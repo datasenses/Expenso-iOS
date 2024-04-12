@@ -12,7 +12,7 @@ let APP_NAME = "Expense Diary"
 
 // IMAGE_ICON NAMES
 let IMAGE_DELETE_ICON = "delete_icon"
-let IMAGE_SHARE_ICON = "share_icon"
+
 let IMAGE_FILTER_ICON = "filter_icon"
 let IMAGE_OPTION_ICON = "settings_icon"
 

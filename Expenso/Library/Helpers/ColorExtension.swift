@@ -16,8 +16,9 @@ extension Color {
     static let text_secondary_color = Color("textSecondary_4F_F2")
     static let placeholder_color = Color(UIColor(red: 189/255, green: 189/255, blue: 189/255, alpha: 1.0))
     
-    static let main_green = Color(UIColor(red: 111/255, green: 207/255, blue: 151/255, alpha: 1.0))
-    static let main_red = Color(UIColor(red: 235/255, green: 87/255, blue: 87/255, alpha: 1.0))
+    static let main_green = Color(UIColor(red: 39/255, green: 174/255, blue: 96/255, alpha: 1.0))
+    
+    static let main_red = Color(UIColor(red: 192/255, green: 57/255, blue: 43/255, alpha: 1.0))
     
     init(hex: String, alpha: Double = 1) {
         var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

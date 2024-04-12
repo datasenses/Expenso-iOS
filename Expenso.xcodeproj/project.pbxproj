@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6CA52A4D2BB31C8F00B30E33 /* saving_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CA52A4C2BB31C8F00B30E33 /* saving_animation.json */; };
+		6CA52AC22BBB0F7D00B30E33 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CA52AC12BBB0F7D00B30E33 /* GoogleService-Info.plist */; };
+		6CA52AE62BBC395200B30E33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA52AE52BBC395200B30E33 /* AppDelegate.swift */; };
+		6CA52B002BBC513D00B30E33 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6CA52AE72BBC513D00B30E33 /* PrivacyInfo.xcprivacy */; };
+		6CA52B1A2BBC5A5400B30E33 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA52B192BBC5A5400B30E33 /* LaunchView.swift */; };
+		6CA52B1C2BBC5AA400B30E33 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA52B1B2BBC5AA400B30E33 /* Color.swift */; };
+		6CA52B1E2BBC5C1100B30E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA52B1D2BBC5C1100B30E33 /* LaunchScreen.storyboard */; };
 		736C721B25CFE8E200720DEA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736C721A25CFE8E200720DEA /* LottieView.swift */; };
 		738B1C1825C65DFE0067407B /* ExpensoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C1725C65DFE0067407B /* ExpensoApp.swift */; };
 		738B1C1C25C65E060067407B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C1B25C65E060067407B /* Assets.xcassets */; };
@@ -42,6 +48,12 @@
 		0612E270288B0A9FAE81D451 /* Pods-ExpenseDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseDiary.release.xcconfig"; path = "Target Support Files/Pods-ExpenseDiary/Pods-ExpenseDiary.release.xcconfig"; sourceTree = "<group>"; };
 		2C2D1600DAC62FA04EDCF170 /* Pods-Expenso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expenso.debug.xcconfig"; path = "Target Support Files/Pods-Expenso/Pods-Expenso.debug.xcconfig"; sourceTree = "<group>"; };
 		6CA52A4C2BB31C8F00B30E33 /* saving_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = saving_animation.json; sourceTree = "<group>"; };
+		6CA52AC12BBB0F7D00B30E33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6CA52AE52BBC395200B30E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CA52AE72BBC513D00B30E33 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		6CA52B192BBC5A5400B30E33 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		6CA52B1B2BBC5AA400B30E33 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		6CA52B1D2BBC5C1100B30E33 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		736C721A25CFE8E200720DEA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		738B1C1425C65DFE0067407B /* ExpenseDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		738B1C1725C65DFE0067407B /* ExpensoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensoApp.swift; sourceTree = "<group>"; };
@@ -88,9 +100,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CA52ABE2BBB0F3000B30E33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CA52AC12BBB0F7D00B30E33 /* GoogleService-Info.plist */,
+				6CA52AE82BBC513D00B30E33 /* Supporting Files */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CA52AE82BBC513D00B30E33 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CA52AE72BBC513D00B30E33 /* PrivacyInfo.xcprivacy */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CA52B182BBC5A4400B30E33 /* LaunchView */ = {
+			isa = PBXGroup;
+			children = (
+				6CA52B192BBC5A5400B30E33 /* LaunchView.swift */,
+				6CA52B1D2BBC5C1100B30E33 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchView;
+			sourceTree = "<group>";
+		};
 		733763A827120DB600AA983A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				6CA52B182BBC5A4400B30E33 /* LaunchView */,
 				738B1C8E25C680C50067407B /* About */,
 				738B1C8925C67D790067407B /* ExpenseFilter */,
 				738B1C7D25C675FA0067407B /* ExpenseDetailed */,
@@ -148,10 +187,12 @@
 		738B1C1625C65DFE0067407B /* Expenso */ = {
 			isa = PBXGroup;
 			children = (
+				6CA52ABE2BBB0F3000B30E33 /* Frameworks */,
 				733763AA27120E0500AA983A /* Library */,
 				733763A927120DF300AA983A /* Resources */,
 				733763A827120DB600AA983A /* Screens */,
 				738B1C1725C65DFE0067407B /* ExpensoApp.swift */,
+				6CA52AE52BBC395200B30E33 /* AppDelegate.swift */,
 				738B1C1B25C65E060067407B /* Assets.xcassets */,
 				738B1C2525C65E060067407B /* Info.plist */,
 				738B1C2225C65E060067407B /* ExpenseDiary.xcdatamodeld */,
@@ -250,6 +291,7 @@
 		75C6B48225F37FF60079BCFC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6CA52B1B2BBC5AA400B30E33 /* Color.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -333,7 +375,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				738B1C1F25C65E060067407B /* Preview Assets.xcassets in Resources */,
+				6CA52AC22BBB0F7D00B30E33 /* GoogleService-Info.plist in Resources */,
 				738B1C1C25C65E060067407B /* Assets.xcassets in Resources */,
+				6CA52B1E2BBC5C1100B30E33 /* LaunchScreen.storyboard in Resources */,
+				6CA52B002BBC513D00B30E33 /* PrivacyInfo.xcprivacy in Resources */,
 				6CA52A4D2BB31C8F00B30E33 /* saving_animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +439,9 @@
 				738B1C4F25C663180067407B /* DateExtension.swift in Sources */,
 				738B1C5225C6632F0067407B /* HelperMethods.swift in Sources */,
 				738B1C2425C65E060067407B /* ExpenseDiary.xcdatamodeld in Sources */,
+				6CA52B1A2BBC5A5400B30E33 /* LaunchView.swift in Sources */,
 				738B1C8B25C67D880067407B /* ExpenseFilterView.swift in Sources */,
+				6CA52AE62BBC395200B30E33 /* AppDelegate.swift in Sources */,
 				738B1C3325C660140067407B /* ExpenseCD.swift in Sources */,
 				738B1C4325C6629D0067407B /* ColorExtension.swift in Sources */,
 				738B1C4025C662890067407B /* InterFontModifier.swift in Sources */,
@@ -409,6 +456,7 @@
 				738B1C7025C674120067407B /* ExpenseSettingsViewModel.swift in Sources */,
 				738B1C2F25C65EF70067407B /* Configs.swift in Sources */,
 				73E688DA25FF32790000462A /* ChartView.swift in Sources */,
+				6CA52B1C2BBC5AA400B30E33 /* Color.swift in Sources */,
 				736C721B25CFE8E200720DEA /* LottieView.swift in Sources */,
 				738B1C7725C675200067407B /* AddExpenseView.swift in Sources */,
 				738B1C8025C6763E0067407B /* ExpenseDetailedView.swift in Sources */,
@@ -469,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -524,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -544,13 +592,31 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Expenso/Preview Content\"";
 				DEVELOPMENT_TEAM = 3B9LSV485H;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Expenso/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"DGCharts\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Combine\"",
+					"-weak_framework",
+					"\"SwiftUI\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.datasenses.io.expensop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -570,13 +636,31 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Expenso/Preview Content\"";
 				DEVELOPMENT_TEAM = 3B9LSV485H;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Expenso/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"DGCharts\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Combine\"",
+					"-weak_framework",
+					"\"SwiftUI\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.datasenses.io.expensop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
