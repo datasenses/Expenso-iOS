@@ -21,8 +21,9 @@ struct AboutView: View {
                     
                     Spacer().frame(height: 80)
                     
-                    Image("expense_diary_icon").resizable().frame(width: 120.0, height: 120.0)
-                    TextView(text: "\(APP_NAME)", type: .h6).foregroundColor(Color.text_primary_color).padding(.top, 20)
+                    Image("datasenses").resizable().frame(width: 120.0, height: 120.0)
+                    TextView(text: "\(APP_NAME)", type: .h5).foregroundColor(Color.text_primary_color).padding(.top, 20)
+                    TextView(text: "\(APP_DESC)", type: .h6).foregroundColor(Color.text_primary_color).padding(.top, 5)
                     TextView(text: "v\(Bundle.main.infoDictionary!["CFBundleShortVersionString"] ?? "")", type: .body_2)
                         .foregroundColor(Color.text_secondary_color).padding(.top, 2)
                     

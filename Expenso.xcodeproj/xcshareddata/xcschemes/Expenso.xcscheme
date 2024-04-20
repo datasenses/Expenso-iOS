@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "738B1C1325C65DFE0067407B"
-               BuildableName = "ExpenseDiary.app"
-               BlueprintName = "ExpenseDiary"
+               BuildableName = "Datasenses.app"
+               BlueprintName = "Datasenses"
                ReferencedContainer = "container:Expenso.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "738B1C1325C65DFE0067407B"
-            BuildableName = "ExpenseDiary.app"
-            BlueprintName = "ExpenseDiary"
+            BuildableName = "Datasenses.app"
+            BlueprintName = "Datasenses"
             ReferencedContainer = "container:Expenso.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "738B1C1325C65DFE0067407B"
-            BuildableName = "ExpenseDiary.app"
-            BlueprintName = "ExpenseDiary"
+            BuildableName = "Datasenses.app"
+            BlueprintName = "Datasenses"
             ReferencedContainer = "container:Expenso.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

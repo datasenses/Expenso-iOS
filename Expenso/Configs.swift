@@ -8,7 +8,8 @@
 import Foundation
 
 // App Globals
-let APP_NAME = "Expense Diary"
+let APP_NAME = "Datasense"
+let APP_DESC = "Your Expense Diary"
 
 // IMAGE_ICON NAMES
 let IMAGE_DELETE_ICON = "delete_icon"

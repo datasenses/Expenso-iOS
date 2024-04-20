@@ -14,6 +14,7 @@
 		6CA52B1A2BBC5A5400B30E33 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA52B192BBC5A5400B30E33 /* LaunchView.swift */; };
 		6CA52B1C2BBC5AA400B30E33 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA52B1B2BBC5AA400B30E33 /* Color.swift */; };
 		6CA52B1E2BBC5C1100B30E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA52B1D2BBC5C1100B30E33 /* LaunchScreen.storyboard */; };
+		6CB6A1B370D7FB90E5798C8E /* Pods_Datasenses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579C3AF9E587A8552DDADAE7 /* Pods_Datasenses.framework */; };
 		736C721B25CFE8E200720DEA /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736C721A25CFE8E200720DEA /* LottieView.swift */; };
 		738B1C1825C65DFE0067407B /* ExpensoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C1725C65DFE0067407B /* ExpensoApp.swift */; };
 		738B1C1C25C65E060067407B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738B1C1B25C65E060067407B /* Assets.xcassets */; };
@@ -41,12 +42,14 @@
 		738B1C9025C680D20067407B /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738B1C8F25C680D20067407B /* AboutView.swift */; };
 		73998C5525DA5578007D735B /* AttachmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73998C5425DA5578007D735B /* AttachmentHandler.swift */; };
 		73E688DA25FF32790000462A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E688D925FF32790000462A /* ChartView.swift */; };
-		83DCC4074B51BBB91FA98F42 /* Pods_ExpenseDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79CFE64623D5827569D129F /* Pods_ExpenseDiary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0612E270288B0A9FAE81D451 /* Pods-ExpenseDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseDiary.release.xcconfig"; path = "Target Support Files/Pods-ExpenseDiary/Pods-ExpenseDiary.release.xcconfig"; sourceTree = "<group>"; };
+		104BF5C9ECE69F429F7E5039 /* Pods-Datasenses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Datasenses.release.xcconfig"; path = "Target Support Files/Pods-Datasenses/Pods-Datasenses.release.xcconfig"; sourceTree = "<group>"; };
 		2C2D1600DAC62FA04EDCF170 /* Pods-Expenso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expenso.debug.xcconfig"; path = "Target Support Files/Pods-Expenso/Pods-Expenso.debug.xcconfig"; sourceTree = "<group>"; };
+		505D71CFDE82F127073A7B50 /* Pods-Datasenses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Datasenses.debug.xcconfig"; path = "Target Support Files/Pods-Datasenses/Pods-Datasenses.debug.xcconfig"; sourceTree = "<group>"; };
+		579C3AF9E587A8552DDADAE7 /* Pods_Datasenses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Datasenses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA52A4C2BB31C8F00B30E33 /* saving_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = saving_animation.json; sourceTree = "<group>"; };
 		6CA52AC12BBB0F7D00B30E33 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6CA52AE52BBC395200B30E33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +58,7 @@
 		6CA52B1B2BBC5AA400B30E33 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		6CA52B1D2BBC5C1100B30E33 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		736C721A25CFE8E200720DEA /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		738B1C1425C65DFE0067407B /* ExpenseDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		738B1C1425C65DFE0067407B /* Datasenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Datasenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		738B1C1725C65DFE0067407B /* ExpensoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensoApp.swift; sourceTree = "<group>"; };
 		738B1C1B25C65E060067407B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		738B1C1E25C65E060067407B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -85,7 +88,6 @@
 		73E688D925FF32790000462A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		B07E4D1AF457AB52E048A8B5 /* Pods-Expenso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expenso.release.xcconfig"; path = "Target Support Files/Pods-Expenso/Pods-Expenso.release.xcconfig"; sourceTree = "<group>"; };
 		DFF8439FF29CC3C825254D53 /* Pods-ExpenseDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpenseDiary.debug.xcconfig"; path = "Target Support Files/Pods-ExpenseDiary/Pods-ExpenseDiary.debug.xcconfig"; sourceTree = "<group>"; };
-		F79CFE64623D5827569D129F /* Pods_ExpenseDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpenseDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83DCC4074B51BBB91FA98F42 /* Pods_ExpenseDiary.framework in Frameworks */,
+				6CB6A1B370D7FB90E5798C8E /* Pods_Datasenses.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +181,7 @@
 		738B1C1525C65DFE0067407B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				738B1C1425C65DFE0067407B /* ExpenseDiary.app */,
+				738B1C1425C65DFE0067407B /* Datasenses.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,7 +301,7 @@
 		797DEE244C92A7FEC658698F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F79CFE64623D5827569D129F /* Pods_ExpenseDiary.framework */,
+				579C3AF9E587A8552DDADAE7 /* Pods_Datasenses.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -311,6 +313,8 @@
 				B07E4D1AF457AB52E048A8B5 /* Pods-Expenso.release.xcconfig */,
 				DFF8439FF29CC3C825254D53 /* Pods-ExpenseDiary.debug.xcconfig */,
 				0612E270288B0A9FAE81D451 /* Pods-ExpenseDiary.release.xcconfig */,
+				505D71CFDE82F127073A7B50 /* Pods-Datasenses.debug.xcconfig */,
+				104BF5C9ECE69F429F7E5039 /* Pods-Datasenses.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -318,9 +322,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		738B1C1325C65DFE0067407B /* ExpenseDiary */ = {
+		738B1C1325C65DFE0067407B /* Datasenses */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 738B1C2825C65E060067407B /* Build configuration list for PBXNativeTarget "ExpenseDiary" */;
+			buildConfigurationList = 738B1C2825C65E060067407B /* Build configuration list for PBXNativeTarget "Datasenses" */;
 			buildPhases = (
 				44BF09B51B528BEC272189A4 /* [CP] Check Pods Manifest.lock */,
 				738B1C1025C65DFE0067407B /* Sources */,
@@ -332,9 +336,9 @@
 			);
 			dependencies = (
 			);
-			name = ExpenseDiary;
+			name = Datasenses;
 			productName = Expenso;
-			productReference = 738B1C1425C65DFE0067407B /* ExpenseDiary.app */;
+			productReference = 738B1C1425C65DFE0067407B /* Datasenses.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -364,7 +368,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				738B1C1325C65DFE0067407B /* ExpenseDiary */,
+				738B1C1325C65DFE0067407B /* Datasenses */,
 			);
 		};
 /* End PBXProject section */
@@ -401,7 +405,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ExpenseDiary-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Datasenses-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -414,15 +418,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExpenseDiary/Pods-ExpenseDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Datasenses/Pods-Datasenses-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ExpenseDiary/Pods-ExpenseDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Datasenses/Pods-Datasenses-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExpenseDiary/Pods-ExpenseDiary-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Datasenses/Pods-Datasenses-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -584,7 +588,7 @@
 		};
 		738B1C2925C65E060067407B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFF8439FF29CC3C825254D53 /* Pods-ExpenseDiary.debug.xcconfig */;
+			baseConfigurationReference = 505D71CFDE82F127073A7B50 /* Pods-Datasenses.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -599,7 +603,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -628,7 +632,7 @@
 		};
 		738B1C2A25C65E060067407B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0612E270288B0A9FAE81D451 /* Pods-ExpenseDiary.release.xcconfig */;
+			baseConfigurationReference = 104BF5C9ECE69F429F7E5039 /* Pods-Datasenses.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -643,7 +647,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.3.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -682,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		738B1C2825C65E060067407B /* Build configuration list for PBXNativeTarget "ExpenseDiary" */ = {
+		738B1C2825C65E060067407B /* Build configuration list for PBXNativeTarget "Datasenses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				738B1C2925C65E060067407B /* Debug */,
