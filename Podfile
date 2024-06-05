@@ -7,6 +7,6 @@ target 'Datasenses' do
 
   pod 'lottie-ios', '~> 4.4'
   pod 'DGCharts', '~> 5.1'
-  pod 'Datasenses-iOS' , :git => 'git@github.com:datasenses/datasenses-ios.git', :tag => '0.1.5'
+  pod 'Datasenses-iOS' , :git => 'git@github.com:datasenses/datasenses-ios.git', :tag => '0.3.0'
  
 end
