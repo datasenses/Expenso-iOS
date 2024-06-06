@@ -34,7 +34,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAdvertisingAttributionReportEndpoint</key>
-	<string>https://dts.guru/.well-known/skadnetwork/report-attribution/</string>
+	<string>https://dts.guru</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Your camera is used to attach media files to your transactions</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
